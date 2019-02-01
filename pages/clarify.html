@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>GTD</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">GTD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="pages/about.html">About</a>
+                <a class="nav-item nav-link" href="pages/portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="pages/reviews.html">Reviews</a>
+            </div>
+            </div>
+    </nav>
+
+    <div class="grid-container">
+        <!-- <div class="card" style="width: 18rem;">
+            <div class="card-header" id="clarify-card-list-header">
+                From Inbox
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item active">Cras justo odio
+                    <div>
+                        <img class="list-image" src="http://www.hello.com/img_/hellowithwaves.png"/>
+                    </div>
+                </li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div> -->
+        <div class=" grid-item list-group" id="inbox-list-group">
+            <a class="list-group-item list-group-item-action flex-column align-items-start" id="inbox-list-title">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Items To Process</h5>
+                    <!-- <small>3 days ago</small> -->
+                </div>
+                <!-- <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>Donec id elit non mi porta.</small> -->
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                <!-- <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> -->
+                <div>
+                    <img class="list-image" src="https://keep.google.com/u/0/media/v2/1Wb1HJeVnx32nAs06Ye52ogiF_XL_XZ7Z6Es1L1iM8BfDXFbtgDBC7a6WhRIIQ64m8OpK/1a6zWzGLdjBwK19bo9RW4T5ewwkHTCXGbsPgbDrex61uz148fgBR3ecF6zYdQ_EMmHWPL?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=4608"/>
+                    <!-- <img class="list-image" src="http://www.hello.com/img_/hellowithwaves.png"/> -->
+                </div>
+                <small>Just now</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                
+                <p class="mb-1">pick up tickets for wonderland</p>
+                <small class="text-muted">Yesterday</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <p class="mb-1">do creative project 1</p>
+                <small class="text-muted">2 days ago</small>
+            </a>
+        </div>
+
+        <div class="grid-item clarify-item-focus">
+                <img id="focus-image" src="https://keep.google.com/u/0/media/v2/1Wb1HJeVnx32nAs06Ye52ogiF_XL_XZ7Z6Es1L1iM8BfDXFbtgDBC7a6WhRIIQ64m8OpK/1a6zWzGLdjBwK19bo9RW4T5ewwkHTCXGbsPgbDrex61uz148fgBR3ecF6zYdQ_EMmHWPL?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=4608"/>
+                <div class="clarify-actions">
+                    <div>Do you need to do something about this, or just store it as reference?</div>
+                    <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#create-action" role="button" aria-expanded="false" aria-controls="create-action">
+                                Create action
+                            </a>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#create-note" aria-expanded="false" aria-controls="create-note">
+                                Create note
+                            </button>
+                        </p>
+                        <div class="collapse" id="create-action">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                        <div class="collapse" id="create-note">
+                            <div class="card card-body">
+                                    <form>
+                                            <div class="form-row">
+                                                    <div class="col">
+                                                        <label for="input-note-title">Title</label>
+                                                      <input type="text" class="form-control" id="input-note-title" >
+                                                    </div>
+                                                    <div class="col">
+                                                            <label for="input-note-tags">Tags</label>
+                                                      <input type="text" class="form-control" id="input-note-tags" placeholder="e.g. school">
+                                                    </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                              <label for="exampleFormControlTextarea1">Example textarea</label>
+                                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                          </form>
+                            </div>
+                        </div>
+                </div>
+                
+        </div>
+        <!-- <div class="hero-text">
+                <h1>What's on your mind?</h1>
+                <textarea id="capture-text-input"></textarea>
+                <form>
+                    <input type="text" id="capture-text">
+                </form> -->
+                <!-- <button>Submit</button>
+                
+        </div> -->
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
